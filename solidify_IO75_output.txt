@@ -1,0 +1,23 @@
+'solc --version' running
+'solc ./arithmatic-smart-contract-testcases\IO75.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,C:\Users\lsandula\Downloads\slither\arithmatic-smart-contract-testcases' running
+INFO:Detectors:
+
+Potential constant overflow in IntegerOverflowUnderflowTest.mulOverflow at line 16
+Operation: TMP_0(uint8) = a (c)* b
+Consider using SafeMath or ensure values fit within declared types.
+Potential constant underflow in IntegerOverflowUnderflowTest.subUnderflow at line 23
+Operation: TMP_1(uint8) = a (c)- b
+Consider using SafeMath or ensure values fit within declared types.
+Potential constant overflow in IntegerOverflowUnderflowTest.addOverflow at line 30
+Operation: TMP_2(uint8) = a (c)+ b
+Consider using SafeMath or ensure values fit within declared types.
+Potential constant overflow in IntegerOverflowUnderflowTest.shiftOverflow at line 42
+Operation: TMP_5(uint8) = a << 8
+Consider using SafeMath or ensure values fit within declared types.
+Potential constant overflow in IntegerOverflowUnderflowTest.powerOverflow at line 48
+Operation: TMP_6(uint8) = a (c)** 3
+Consider using SafeMath or ensure values fit within declared types.
+Potential constant overflow in IntegerOverflowUnderflowTest.bitwiseNot at line 61
+Operation: TMP_7(uint8) = a (c)+ 1
+Consider using SafeMath or ensure values fit within declared types.Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#integer-overflow-underflow
+INFO:Slither:./arithmatic-smart-contract-testcases\IO75.sol analyzed (1 contracts with 1 detectors), 6 result(s) found

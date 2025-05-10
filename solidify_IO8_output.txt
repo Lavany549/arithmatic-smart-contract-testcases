@@ -1,0 +1,11 @@
+'solc --version' running
+'solc ./arithmatic-smart-contract-testcases\IO8.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,C:\Users\lsandula\Downloads\slither\arithmatic-smart-contract-testcases' running
+INFO:Detectors:
+
+Potential constant overflow in IntegerOverflowTest.constructor at line 12
+Operation: TMP_0(uint256) = 2 ** 256
+Consider using SafeMath or ensure values fit within declared types.
+Potential constant overflow in IntegerOverflowTest.resetValues at line 35
+Operation: TMP_4(uint256) = 2 ** 256
+Consider using SafeMath or ensure values fit within declared types.Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#integer-overflow-underflow
+INFO:Slither:./arithmatic-smart-contract-testcases\IO8.sol analyzed (1 contracts with 1 detectors), 2 result(s) found
