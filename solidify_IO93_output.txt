@@ -1,0 +1,131 @@
+'solc --version' running
+'solc ./arithmatic-smart-contract-testcases\IO93.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,C:\Users\lsandula\Downloads\slither\arithmatic-smart-contract-testcases' running
+INFO:Detectors:
+
+Potential constant overflow/underflow in SafeMath.mul at line 9
+Operation: NEW VARIABLE c = a * b
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in SafeMath.div at line 16
+Operation: NEW VARIABLE c = a / b
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in SafeMath.add at line 27
+Operation: NEW VARIABLE c = a + b
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in Ownable.transferOwnership at line 185
+Operation: EXPRESSION OwnershipTransferred(owner,newOwner)
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in Ownable.transferOwnership at line 183
+Operation: EXPRESSION onlyOwner()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in Pausable.transferOwnership at line 185
+Operation: EXPRESSION OwnershipTransferred(owner,newOwner)
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in Pausable.transferOwnership at line 183
+Operation: EXPRESSION onlyOwner()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in Pausable.pause at line 223
+Operation: EXPRESSION Pause()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in Pausable.pause at line 221
+Operation: EXPRESSION onlyOwner()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in Pausable.pause at line 221
+Operation: EXPRESSION whenNotPaused()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in Pausable.unpause at line 231
+Operation: EXPRESSION Unpause()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in Pausable.unpause at line 229
+Operation: EXPRESSION onlyOwner()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in Pausable.unpause at line 229
+Operation: EXPRESSION whenPaused()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in PausableToken.pause at line 223
+Operation: EXPRESSION Pause()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in PausableToken.pause at line 221
+Operation: EXPRESSION onlyOwner()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in PausableToken.pause at line 221
+Operation: EXPRESSION whenNotPaused()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in PausableToken.unpause at line 231
+Operation: EXPRESSION Unpause()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in PausableToken.unpause at line 229
+Operation: EXPRESSION onlyOwner()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in PausableToken.unpause at line 229
+Operation: EXPRESSION whenPaused()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in PausableToken.transferOwnership at line 185
+Operation: EXPRESSION OwnershipTransferred(owner,newOwner)
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in PausableToken.transferOwnership at line 183
+Operation: EXPRESSION onlyOwner()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in PausableToken.transfer at line 243
+Operation: EXPRESSION whenNotPaused()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in PausableToken.transferFrom at line 247
+Operation: EXPRESSION whenNotPaused()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in PausableToken.approve at line 251
+Operation: EXPRESSION whenNotPaused()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in PausableToken.batchTransfer at line 261
+Operation: EXPRESSION balances[msg.sender] = balances[msg.sender].sub(amount)
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in PausableToken.batchTransfer at line 255
+Operation: EXPRESSION whenNotPaused()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in BecToken.transfer at line 243
+Operation: EXPRESSION whenNotPaused()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in BecToken.transferFrom at line 247
+Operation: EXPRESSION whenNotPaused()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in BecToken.approve at line 251
+Operation: EXPRESSION whenNotPaused()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in BecToken.batchTransfer at line 261
+Operation: EXPRESSION balances[msg.sender] = balances[msg.sender].sub(amount)
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in BecToken.batchTransfer at line 255
+Operation: EXPRESSION whenNotPaused()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in BecToken.pause at line 223
+Operation: EXPRESSION Pause()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in BecToken.pause at line 221
+Operation: EXPRESSION onlyOwner()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in BecToken.pause at line 221
+Operation: EXPRESSION whenNotPaused()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in BecToken.unpause at line 231
+Operation: EXPRESSION Unpause()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in BecToken.unpause at line 229
+Operation: EXPRESSION onlyOwner()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in BecToken.unpause at line 229
+Operation: EXPRESSION whenPaused()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in BecToken.transferOwnership at line 185
+Operation: EXPRESSION OwnershipTransferred(owner,newOwner)
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in BecToken.transferOwnership at line 183
+Operation: EXPRESSION onlyOwner()
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in BecToken.BecToken at line 291
+Operation: EXPRESSION totalSupply = 7000000000 * (10 ** (uint256(decimals)))
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in BecToken.BecToken at line 292
+Operation: EXPRESSION balances[msg.sender] = totalSupply
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in BecToken.fallback at line 297
+Operation: EXPRESSION revert()()
+Consider using SafeMath or require statements to ensure values fit within declared types.Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#integer-overflow-underflow
+INFO:Slither:./arithmatic-smart-contract-testcases\IO93.sol analyzed (9 contracts with 1 detectors), 42 result(s) found

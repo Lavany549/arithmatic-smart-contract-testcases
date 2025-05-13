@@ -1,0 +1,14 @@
+'solc --version' running
+'solc ./arithmatic-smart-contract-testcases\IO76.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,C:\Users\lsandula\Downloads\slither\arithmatic-smart-contract-testcases' running
+Compilation warnings/errors on ./arithmatic-smart-contract-testcases\IO76.sol:
+./arithmatic-smart-contract-testcases\IO76.sol:14:5: Warning: Function is marked pure. Be careful, pureness is not enforced yet.
+    function sub(uint256 a, uint256 b) internal pure returns (uint256) {
+    ^
+Spanning multiple lines.
+
+INFO:Detectors:
+
+Potential constant overflow/underflow in IntegerOverflowMappingSym1.init at line 10
+Operation: EXPRESSION map[k] = sub(map[k],v)
+Consider using SafeMath or require statements to ensure values fit within declared types.Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#integer-overflow-underflow
+INFO:Slither:./arithmatic-smart-contract-testcases\IO76.sol analyzed (1 contracts with 1 detectors), 1 result(s) found

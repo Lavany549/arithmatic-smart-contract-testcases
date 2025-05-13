@@ -1,0 +1,54 @@
+'solc --version' running
+'solc ./arithmatic-smart-contract-testcases\IO78.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,C:\Users\lsandula\Downloads\slither\arithmatic-smart-contract-testcases' running
+Compilation warnings/errors on ./arithmatic-smart-contract-testcases\IO78.sol:
+Error: Source "@openzeppelin/contracts/math/SafeMath.sol" not found: File not found.
+ --> ./arithmatic-smart-contract-testcases/IO78.sol:4:1:
+  |
+4 | import "@openzeppelin/contracts/math/SafeMath.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Traceback (most recent call last):
+  File "C:\Users\lsandula\AppData\Local\Programs\Python\Python310\lib\site-packages\crytic_compile\platform\solc.py", line 581, in _run_solc
+    ret: Dict = json.loads(stdout)
+  File "C:\Users\lsandula\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\lsandula\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\lsandula\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lsandula\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\lsandula\AppData\Local\Programs\Python\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\lsandula\AppData\Local\Programs\Python\Python310\Scripts\slither.exe\__main__.py", line 7, in <module>
+  File "C:\Users\lsandula\AppData\Local\Programs\Python\Python310\lib\site-packages\slither\__main__.py", line 776, in main
+    main_impl(all_detector_classes=detectors, all_printer_classes=printers)
+  File "C:\Users\lsandula\AppData\Local\Programs\Python\Python310\lib\site-packages\slither\__main__.py", line 882, in main_impl
+    ) = process_all(filename, args, detector_classes, printer_classes)
+  File "C:\Users\lsandula\AppData\Local\Programs\Python\Python310\lib\site-packages\slither\__main__.py", line 96, in process_all
+    compilations = compile_all(target, **vars(args))
+  File "C:\Users\lsandula\AppData\Local\Programs\Python\Python310\lib\site-packages\crytic_compile\crytic_compile.py", line 722, in compile_all
+    compilations.append(CryticCompile(target, **kwargs))
+  File "C:\Users\lsandula\AppData\Local\Programs\Python\Python310\lib\site-packages\crytic_compile\crytic_compile.py", line 211, in __init__
+    self._compile(**kwargs)
+  File "C:\Users\lsandula\AppData\Local\Programs\Python\Python310\lib\site-packages\crytic_compile\crytic_compile.py", line 633, in _compile
+    self._platform.compile(self, **kwargs)
+  File "C:\Users\lsandula\AppData\Local\Programs\Python\Python310\lib\site-packages\crytic_compile\platform\solc.py", line 150, in compile
+    targets_json = _get_targets_json(compilation_unit, self._target, **kwargs)
+  File "C:\Users\lsandula\AppData\Local\Programs\Python\Python310\lib\site-packages\crytic_compile\platform\solc.py", line 279, in _get_targets_json
+    return _run_solc(
+  File "C:\Users\lsandula\AppData\Local\Programs\Python\Python310\lib\site-packages\crytic_compile\platform\solc.py", line 585, in _run_solc
+    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation Error: Source "@openzeppelin/contracts/math/SafeMath.sol" not found: File not found.
+ --> ./arithmatic-smart-contract-testcases/IO78.sol:4:1:
+  |
+4 | import "@openzeppelin/contracts/math/SafeMath.sol";
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+

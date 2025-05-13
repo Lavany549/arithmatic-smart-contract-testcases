@@ -1,0 +1,13 @@
+'solc --version' running
+'solc ./arithmatic-smart-contract-testcases\IO80.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,C:\Users\lsandula\Downloads\slither\arithmatic-smart-contract-testcases' running
+Compilation warnings/errors on ./arithmatic-smart-contract-testcases\IO80.sol:
+./arithmatic-smart-contract-testcases\IO80.sol:12:33: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function TokenSaleChallenge(address _player) public payable {
+                                ^-------------^
+
+INFO:Detectors:
+
+Potential constant overflow/underflow in TokenSaleChallenge.isComplete at line 17
+Operation: RETURN address(this).balance < 1000000000000000000
+Consider using SafeMath or require statements to ensure values fit within declared types.Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#integer-overflow-underflow
+INFO:Slither:./arithmatic-smart-contract-testcases\IO80.sol analyzed (1 contracts with 1 detectors), 1 result(s) found

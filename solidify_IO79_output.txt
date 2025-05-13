@@ -1,0 +1,8 @@
+'solc --version' running
+'solc ./arithmatic-smart-contract-testcases\IO79.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc --allow-paths .,C:\Users\lsandula\Downloads\slither\arithmatic-smart-contract-testcases' running
+INFO:Detectors:
+
+Potential constant overflow/underflow in IntegerOverflowMappingSym1.init at line 7
+Operation: EXPRESSION map[k] -= v
+Consider using SafeMath or require statements to ensure values fit within declared types.Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#integer-overflow-underflow
+INFO:Slither:./arithmatic-smart-contract-testcases\IO79.sol analyzed (1 contracts with 1 detectors), 1 result(s) found

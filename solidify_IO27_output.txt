@@ -1,0 +1,20 @@
+'solc --version' running
+'solc ./arithmatic-smart-contract-testcases\IO27.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,C:\Users\lsandula\Downloads\slither\arithmatic-smart-contract-testcases' running
+INFO:Detectors:
+
+Potential constant overflow/underflow in TimeWrapVault.depositFunds at line 10
+Operation: EXPRESSION accountBalances[msg.sender] += msg.value
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in TimeWrapVault.depositFunds at line 11
+Operation: EXPRESSION withdrawalUnlockTime[msg.sender] = block.timestamp + 604800
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in TimeWrapVault.releaseFunds at line 24
+Operation: NEW VARIABLE withdrawalAmount = accountBalances[msg.sender]
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in TimeWrapVault.releaseFunds at line 25
+Operation: EXPRESSION accountBalances[msg.sender] = 0
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in TimeWrapVault.releaseFunds at line 27
+Operation: EXPRESSION (successfulWithdrawal,None) = msg.sender.call{value: withdrawalAmount}()
+Consider using SafeMath or require statements to ensure values fit within declared types.Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#integer-overflow-underflow
+INFO:Slither:./arithmatic-smart-contract-testcases\IO27.sol analyzed (1 contracts with 1 detectors), 5 result(s) found
