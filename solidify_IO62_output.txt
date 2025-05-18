@@ -1,0 +1,11 @@
+'solc --version' running
+'solc ./arithmatic-smart-contract-testcases\IO62.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,C:\Users\lsandula\Downloads\slither\arithmatic-smart-contract-testcases' running
+INFO:Detectors:
+
+Constant underflow in OverflowUnderFlow.underflow at line 12
+Operation: EXPRESSION zero -= 1
+Consider using SafeMath or ensure values fit within declared types.
+Constant overflow in OverflowUnderFlow.overflow at line 16
+Operation: EXPRESSION max += 2
+Consider using SafeMath or ensure values fit within declared types.Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#integer-overflow-underflow
+INFO:Slither:./arithmatic-smart-contract-testcases\IO62.sol analyzed (1 contracts with 1 detectors), 2 result(s) found

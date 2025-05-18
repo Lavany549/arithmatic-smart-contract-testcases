@@ -1,0 +1,32 @@
+'solc --version' running
+'solc ./arithmatic-smart-contract-testcases\IO50.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,C:\Users\lsandula\Downloads\slither\arithmatic-smart-contract-testcases' running
+INFO:Detectors:
+
+Potential constant overflow/underflow in Ownable.transferOwnership at line 37
+Operation: EXPRESSION OwnershipTransferred(owner,newOwner)
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in contractDeployer.transferOwnership at line 37
+Operation: EXPRESSION OwnershipTransferred(owner,newOwner)
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in contractDeployer.setUp at line 96
+Operation: EXPRESSION token = ERC20(tokenAddr)
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in contractDeployer.setUp at line 97
+Operation: EXPRESSION cdep = cDeployer(_cdep)
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in contractDeployer.setUp at line 98
+Operation: EXPRESSION tdep = tDeployer(_tdep)
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in contractDeployer.deployToken at line 112
+Operation: EXPRESSION ContractCreated(tdep.deployToken(_tName,_tSymbol,_mint,_owner))
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in contractDeployer.deployCrowdsale at line 117
+Operation: EXPRESSION ContractCreated(cdep.deployCrowdsale(_eWallet,_token,_tWallet,_maxETH,msg.sender))
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in contractDeployer.multiSender at line 123
+Operation: NEW VARIABLE er2 = customTkn(_token)
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in contractDeployer.multiSender at line 125
+Operation: EXPRESSION er2.multiTransfer(_to,_amount)
+Consider using SafeMath or require statements to ensure values fit within declared types.Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#integer-overflow-underflow
+INFO:Slither:./arithmatic-smart-contract-testcases\IO50.sol analyzed (7 contracts with 1 detectors), 9 result(s) found

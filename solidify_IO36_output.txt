@@ -1,0 +1,25 @@
+'solc --version' running
+'solc ./arithmatic-smart-contract-testcases\IO36.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,C:\Users\lsandula\Downloads\slither\arithmatic-smart-contract-testcases' running
+Compilation warnings/errors on ./arithmatic-smart-contract-testcases\IO36.sol:
+Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+--> ./arithmatic-smart-contract-testcases/IO36.sol
+
+Warning: Unused local variable.
+ --> ./arithmatic-smart-contract-testcases/IO36.sol:7:9:
+  |
+7 |         uint8 smallValue = uint8(largeValue); // Potential overflow (500 > 255) handles by solidity itself
+  |         ^^^^^^^^^^^^^^^^
+
+Warning: Function state mutability can be restricted to view
+ --> ./arithmatic-smart-contract-testcases/IO36.sol:6:5:
+  |
+6 |     function cast() public {
+  |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+INFO:Detectors:
+
+Constant overflow in TypeCastingOverflow.cast at line 7
+Operation: NEW VARIABLE smallValue = uint8(largeValue)
+Consider using SafeMath or ensure values fit within declared types.Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#integer-overflow-underflow
+INFO:Slither:./arithmatic-smart-contract-testcases\IO36.sol analyzed (1 contracts with 1 detectors), 1 result(s) found

@@ -1,0 +1,13 @@
+'solc --version' running
+'solc ./arithmatic-smart-contract-testcases\IO70.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,C:\Users\lsandula\Downloads\slither\arithmatic-smart-contract-testcases' running
+Compilation warnings/errors on ./arithmatic-smart-contract-testcases\IO70.sol:
+Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+--> ./arithmatic-smart-contract-testcases/IO70.sol
+
+
+INFO:Detectors:
+
+Constant underflow in SafeUnderflow.slitherConstructorVariables at line 5
+Operation: OTHER_ENTRYPOINT y = uint8(x)
+Consider using SafeMath or ensure values fit within declared types.Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#integer-overflow-underflow
+INFO:Slither:./arithmatic-smart-contract-testcases\IO70.sol analyzed (1 contracts with 1 detectors), 1 result(s) found

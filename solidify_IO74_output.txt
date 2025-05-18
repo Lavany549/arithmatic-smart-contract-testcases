@@ -1,0 +1,44 @@
+'solc --version' running
+'solc ./arithmatic-smart-contract-testcases\IO74.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,C:\Users\lsandula\Downloads\slither\arithmatic-smart-contract-testcases' running
+INFO:Detectors:
+
+Potential constant overflow/underflow in IntegerOverflowUnderflowTest.multiplyOverflow at line 15
+Operation: RETURN a * b
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in IntegerOverflowUnderflowTest.subtractUnderflow at line 21
+Operation: NEW VARIABLE z = a + b
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in IntegerOverflowUnderflowTest.addOverflow at line 27
+Operation: RETURN a + b
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in IntegerOverflowUnderflowTest.complexOverflow at line 32
+Operation: RETURN (a * 10) + 100
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in IntegerOverflowUnderflowTest.shiftOverflow at line 37
+Operation: RETURN a << 8
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in IntegerOverflowUnderflowTest.powerOverflow at line 42
+Operation: RETURN a ** 3
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in IntegerOverflowUnderflowTest.complexButSafe at line 76
+Operation: RETURN (a * 2) + 100
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in IntegerOverflowUnderflowTest.safePower at line 81
+Operation: RETURN a ** 2
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in IntegerOverflowUnderflowTest.castFromLarger at line 93
+Operation: RETURN uint8(bigNum)
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in IntegerOverflowUnderflowTest.intermediateOverflowFinalFits at line 98
+Operation: NEW VARIABLE temp = uint16(a) * 1000
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in IntegerOverflowUnderflowTest.intermediateOverflowFinalFits at line 99
+Operation: RETURN uint8(temp / 1000)
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in IntegerOverflowUnderflowTest.safeMathStyle at line 104
+Operation: NEW VARIABLE c = uint16(a) + uint16(b)
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in IntegerOverflowUnderflowTest.safeMathStyle at line 106
+Operation: RETURN uint8(c)
+Consider using SafeMath or require statements to ensure values fit within declared types.Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#integer-overflow-underflow
+INFO:Slither:./arithmatic-smart-contract-testcases\IO74.sol analyzed (1 contracts with 1 detectors), 13 result(s) found

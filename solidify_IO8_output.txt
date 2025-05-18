@@ -1,0 +1,17 @@
+'solc --version' running
+'solc ./arithmatic-smart-contract-testcases\IO8.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,C:\Users\lsandula\Downloads\slither\arithmatic-smart-contract-testcases' running
+INFO:Detectors:
+
+Potential constant overflow/underflow in IntegerOverflowTest.addUint8 at line 18
+Operation: EXPRESSION smallUint += value
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in IntegerOverflowTest.addUint256 at line 22
+Operation: EXPRESSION largeUint += value
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in IntegerOverflowTest.subtractInt8 at line 26
+Operation: EXPRESSION smallInt -= value
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in IntegerOverflowTest.multiplyInt256 at line 30
+Operation: EXPRESSION largeInt *= value
+Consider using SafeMath or require statements to ensure values fit within declared types.Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#integer-overflow-underflow
+INFO:Slither:./arithmatic-smart-contract-testcases\IO8.sol analyzed (1 contracts with 1 detectors), 4 result(s) found

@@ -1,0 +1,14 @@
+'solc --version' running
+'solc ./arithmatic-smart-contract-testcases\IO18.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,C:\Users\lsandula\Downloads\slither\arithmatic-smart-contract-testcases' running
+INFO:Detectors:
+
+Potential constant overflow/underflow in Token.mint at line 8
+Operation: EXPRESSION balances[to] += amount
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in Token.batchMint at line 19
+Operation: EXPRESSION mint(recipients[i],amount)
+Consider using SafeMath or require statements to ensure values fit within declared types.
+Potential constant overflow/underflow in Token.batchMint at line 18
+Operation: EXPRESSION i ++
+Consider using SafeMath or require statements to ensure values fit within declared types.Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#integer-overflow-underflow
+INFO:Slither:./arithmatic-smart-contract-testcases\IO18.sol analyzed (1 contracts with 1 detectors), 3 result(s) found
