@@ -5,10 +5,10 @@ contract IntegerOverflowUnderflowTest {
     // Cases that SHOULD be detected (vulnerable)
     
     // 1. Direct overflow in state variable assignment
-    uint8 public maxUint8 = 255 ;  // Should overflow
+    uint8 public maxUint8 = 255 ;  // not an overflow
     
     // 2. Direct underflow in state variable assignment
-    uint8 public minUint8 = 0 ;    // Should underflow
+    uint8 public minUint8 = 0 ;    // not an underflow
     
     // 3. Overflow in multiplication
     function multiplyOverflow(uint8 a, uint8 b) public pure returns (uint8) {
